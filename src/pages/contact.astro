@@ -1,0 +1,65 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Contact | Darpan Jain">
+  <div class="min-h-screen flex items-center">
+    <div class="max-w-3xl mx-auto px-6 py-20">
+      <h1 class="text-4xl font-heading font-bold mb-6">Get in Touch</h1>
+      <p class="text-xl text-gray-600 mb-12">
+        Have a question or want to collaborate? I'd love to hear from you.
+      </p>
+      
+      <form 
+        action="https://api.web3forms.com/submit"
+        method="POST"
+        class="space-y-8"
+      >
+        <input type="hidden" name="access_key" value="c494d204-6c15-4ad4-bc62-1453e6b9dca7" />
+        
+        <div>
+          <label for="name" class="block text-sm font-medium mb-2">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-black focus:border-transparent outline-none transition-shadow"
+          />
+        </div>
+        
+        <div>
+          <label for="email" class="block text-sm font-medium mb-2">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-black focus:border-transparent outline-none transition-shadow"
+          />
+        </div>
+        
+        <div>
+          <label for="message" class="block text-sm font-medium mb-2">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="6"
+            required
+            class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-black focus:border-transparent outline-none transition-shadow"
+          ></textarea>
+        </div>
+
+        <input type="hidden" name="redirect" value="https://web3forms.com/success" />
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;" />
+        
+        <button
+          type="submit"
+          class="w-full bg-black hover:bg-gray-800 text-white font-medium py-4 px-6 rounded-lg transition-colors"
+        >
+          Send Message
+        </button>
+      </form>
+    </div>
+  </div>
+</Layout>

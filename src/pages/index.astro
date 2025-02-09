@@ -1,0 +1,98 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="About Me | Darpan Jain">
+  <div class="max-w-6xl mx-auto">
+    <!-- Hero Section -->
+    <section class="min-h-[70vh] flex items-center px-6 py-20">
+      <div>
+        <h1 class="text-5xl font-heading font-bold mb-6">Hi, I'm Darpan</h1>
+        <p class="text-xl text-gray-600 mb-8 leading-relaxed max-w-2xl">
+          A passionate entrepreneur and technologist. I help startups build great products and teams.
+        </p>
+        <div class="flex gap-4">
+          <a 
+            href="/contact" 
+            class="inline-block bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800 transition-colors"
+          >
+            Get in Touch
+          </a>
+          <a 
+            href="https://substack.com/@inboxdarpan" 
+            class="inline-block border border-black px-6 py-3 rounded-full hover:bg-black hover:text-white transition-colors"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Read My Blog
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- What I Do Section -->
+    <section class="px-6 py-20">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-12">
+        <!-- Building -->
+        <div class="space-y-4">
+          <div class="mb-8">
+            <img 
+              src="/images/building.svg" 
+              alt="Building illustration" 
+              class="w-full h-48 object-contain"
+            />
+          </div>
+          <h3 class="text-2xl font-heading font-bold">Building</h3>
+          <p class="text-gray-600">
+            Working on a problem statement enabling generative AI startups to build and scale their solutions effectively.
+          </p>
+        </div>
+
+        <!-- Talks -->
+        <div class="space-y-4">
+          <div class="mb-8">
+            <img 
+              src="/images/talking.svg" 
+              alt="Talks illustration" 
+              class="w-full h-48 object-contain"
+            />
+          </div>
+          <h3 class="text-2xl font-heading font-bold">Talks</h3>
+          <p class="text-gray-600">
+            I speak about entrepreneurship, tech hiring, and team building, sharing insights from my experience in building successful teams.
+          </p>
+        </div>
+
+        <!-- Writing -->
+        <div class="space-y-4">
+          <div class="mb-8">
+            <img 
+              src="/images/writing.svg" 
+              alt="Writing illustration" 
+              class="w-full h-48 object-contain"
+            />
+          </div>
+          <h3 class="text-2xl font-heading font-bold">Writing</h3>
+          <p class="text-gray-600">
+            I write about building startups, creating high-performing teams, and share my observations about the tech ecosystem.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="px-6 py-20 bg-gray-50">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl font-heading font-bold mb-8">My Journey</h2>
+        <div class="prose prose-lg">
+          <p>
+            My entrepreneurial journey spans across multiple ventures and collaborations with industry leaders. I've founded two startups - one venture-backed and another bootstrapped - each teaching me invaluable lessons about building and scaling technology companies. My experience working with two Unicorns has given me deep insights into scaling operations and managing high-performing teams.
+          </p>
+          <p>
+            Throughout my career, I've had the privilege of helping numerous startups build their technology products from the ground up. This hands-on experience has taught me the intricacies of product development, team building, and scaling operations. I combine this practical knowledge with strategic thinking to help startups navigate their growth journey effectively.
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+</Layout>
